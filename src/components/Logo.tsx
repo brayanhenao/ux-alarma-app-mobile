@@ -1,20 +1,19 @@
-import * as React from "react"
-import Svg, { Defs, LinearGradient, Stop, Path } from "react-native-svg"
+import * as React from 'react';
+import Svg, { Defs, LinearGradient, Path, Stop } from 'react-native-svg';
 /* SVGR has dropped some elements not supported by react-native-svg: style */
-const SvgComponent = ({size=50, ...props}) => (
+const SvgComponent = ({ size = 50, ...props }) => (
   <Svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     id="OBJECTS"
     viewBox="105 -10 150 150"
     style={{
-        width: size,
-        height: size,
-        marginTop: 10,
-        marginLeft: 10,
+      width: size,
+      height: size,
+      marginTop: 10,
+      marginLeft: 10,
     }}
-    {...props}
-  >
+    {...props}>
     <Defs>
       <LinearGradient
         id="linear-gradient"
@@ -22,8 +21,7 @@ const SvgComponent = ({size=50, ...props}) => (
         x2={119.07}
         y1={130.7}
         y2={79.89}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop offset={0} stopColor="#9c4333" />
         <Stop offset={1} stopColor="#e6aea8" />
       </LinearGradient>
@@ -33,8 +31,7 @@ const SvgComponent = ({size=50, ...props}) => (
         x2={129.95}
         y1={148.36}
         y2={84.58}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop offset={0} stopColor="#ffb4a7" />
         <Stop offset={1} stopColor="#9c4234" />
       </LinearGradient>
@@ -60,8 +57,7 @@ const SvgComponent = ({size=50, ...props}) => (
         x2={90.04}
         y1={64.32}
         y2={150.83}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop offset={0} stopColor="#e6aea8" />
         <Stop offset={1} stopColor="#9c4333" />
       </LinearGradient>
@@ -77,38 +73,38 @@ const SvgComponent = ({size=50, ...props}) => (
     <Path
       d="M150 79.5c-8.94.4-18.18 2.55-24.73 8.42-12.53 11.23-8.77 28.65 5 37.84 17.35 11.62 47.14 15.78 56.21 16.81Z"
       style={{
-        fill: "url(#linear-gradient)",
+        fill: 'url(#linear-gradient)',
       }}
       transform="translate(64.86 -22.85)"
     />
     <Path
       d="M150 79.5c-7.22 2.55-8.22 1.55-14.77 7.42-12.53 11.23-7.77 29.65 6 38.84a108.19 108.19 0 0 0 45.25 16.81Z"
       style={{
-        fill: "url(#linear-gradient-2)",
+        fill: 'url(#linear-gradient-2)',
       }}
       transform="translate(64.86 -22.85)"
     />
     <Path
       d="m143.92 69.07-26.7-46.22-33.94 58.74c18.1-10.8 39.21-16.03 60.64-12.52Z"
       style={{
-        fill: "url(#linear-gradient-3)",
+        fill: 'url(#linear-gradient-3)',
       }}
       transform="translate(64.86 -22.85)"
     />
     <Path
       d="M47.88 142.85c19.3-35.47 58.72-95.39 117.43-63.5 0 0-30.8-8.92-48.09 6.57-31.37 28.11 4.85 56.93 4.85 56.93Z"
       style={{
-        fill: "url(#linear-gradient-4)",
+        fill: 'url(#linear-gradient-4)',
       }}
       transform="translate(64.86 -22.85)"
     />
     <Path
       d="M72.31 142.85c9.32-36.27 36.66-88.58 93-63.5 0 0-30.8-8.92-48.09 6.57-31.37 28.11 4.85 56.93 4.85 56.93Z"
       style={{
-        fill: "url(#linear-gradient-5)",
+        fill: 'url(#linear-gradient-5)',
       }}
       transform="translate(64.86 -22.85)"
     />
   </Svg>
-)
-export default SvgComponent
+);
+export default SvgComponent;

@@ -10,10 +10,10 @@ _*Mejoramiento de la Experiencia de Usuario*_ en la Universidad de los Andes.
 - [Acerca del Desarrollo de la Interfaz](#acerca-del-desarrollo-de-la-interfaz)
 - [Instalación](#instalación)
 - [Ejecución](#ejecución)
-    - [Ejecutar el servidor de Metro](#ejecutar-el-servidor-de-metro)
-    - [Ejecutar la aplicación](#ejecutar-la-aplicación)
-        - [Para Android](#para-android)
-        - [Para iOS](#para-ios)
+  - [Ejecutar el servidor de Metro](#ejecutar-el-servidor-de-metro)
+  - [Ejecutar la aplicación](#ejecutar-la-aplicación)
+    - [Para Android](#para-android)
+    - [Para iOS](#para-ios)
 - [Construcción](#construcción)
 - [Despliegue](#despliegue)
 - [Consideraciones](#consideraciones)
@@ -28,7 +28,7 @@ _*Mejoramiento de la Experiencia de Usuario*_ en la Universidad de los Andes.
 Hemos utilizado [Figma](https://www.figma.com) para el diseño de la interfaz móvil. A continuación, se detallan los
 enlaces al archivo de Figma y al prototipo.
 
-- [Figma detallado](https://www.figma.com/file/QmtTqW4KTHQG8jDWNJUL8X/UX---Alarma-App-(Mobile)-(Full)?type=design&mode=design&t=rv2cEoFN5F5gghCA-0)
+- [Figma detallado](<https://www.figma.com/file/QmtTqW4KTHQG8jDWNJUL8X/UX---Alarma-App-(Mobile)-(Full)?type=design&mode=design&t=rv2cEoFN5F5gghCA-0>)
 - [Prototipo](https://www.figma.com/proto/QmtTqW4KTHQG8jDWNJUL8X/UX-Alarma-App-Mobile-Full?type=design&node-id=54495-24451&t=rv2cEoFN5F5gghCA-0&scaling=contain&page-id=54495%3A24451&starting-point-node-id=54811%3A27755)
 
 ## Acerca del Desarrollo de la Interfaz
@@ -89,4 +89,3 @@ Simulator_ en poco tiempo, siempre y cuando hayas configurado tu emulador/simula
 ## Despliegue
 
 ## Consideraciones
-
