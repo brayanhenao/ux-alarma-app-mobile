@@ -1,79 +1,92 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# AlarmaApp - Interfaz Móvil
 
-# Getting Started
+Este proyecto es la interfaz móvil de la aplicación AlarmaApp, desarrollada como parte del curso de
+_*Mejoramiento de la Experiencia de Usuario*_ en la Universidad de los Andes.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Tabla de Contenido
 
-## Step 1: Start the Metro Server
+- [Integrantes](#integrantes)
+- [Diseño en Figma](#diseño-en-figma)
+- [Acerca del Desarrollo de la Interfaz](#acerca-del-desarrollo-de-la-interfaz)
+- [Instalación](#instalación)
+- [Ejecución](#ejecución)
+    - [Ejecutar el servidor de Metro](#ejecutar-el-servidor-de-metro)
+    - [Ejecutar la aplicación](#ejecutar-la-aplicación)
+        - [Para Android](#para-android)
+        - [Para iOS](#para-ios)
+- [Construcción](#construcción)
+- [Despliegue](#despliegue)
+- [Consideraciones](#consideraciones)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Integrantes
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- [Brayan Henao](https://www.github.com/brayanhenao)
+- [Erik Loaiza](https://www.github.com/erikloaiza)
 
-```bash
-# using npm
-npm start
+## Diseño en Figma
 
-# OR using Yarn
+Hemos utilizado [Figma](https://www.figma.com) para el diseño de la interfaz móvil. A continuación, se detallan los
+enlaces al archivo de Figma y al prototipo.
+
+- [Figma detallado](https://www.figma.com/file/QmtTqW4KTHQG8jDWNJUL8X/UX---Alarma-App-(Mobile)-(Full)?type=design&mode=design&t=rv2cEoFN5F5gghCA-0)
+- [Prototipo](https://www.figma.com/proto/QmtTqW4KTHQG8jDWNJUL8X/UX-Alarma-App-Mobile-Full?type=design&node-id=54495-24451&t=rv2cEoFN5F5gghCA-0&scaling=contain&page-id=54495%3A24451&starting-point-node-id=54811%3A27755)
+
+## Acerca del Desarrollo de la Interfaz
+
+Para el desarrollo de la interfaz, hemos utilizado las siguientes tecnologías:
+
+- [Yarn](https://yarnpkg.com): Gestor de paquetes para JavaScript.
+- [React Native](https://reactnative.dev): Framework para el desarrollo de aplicaciones móviles en JavaScript.
+- [Metro](https://facebook.github.io/metro): Bundler para React Native.
+- [TypeScript](https://www.typescriptlang.org): Lenguaje de programación tipado que compila a JavaScript.
+- [React Native Paper](https://callstack.github.io/react-native-paper): Librería de componentes para React Native basada
+  en Material Design.
+- [React Navigation](https://reactnavigation.org): Librería para la navegación entre pantallas en React Native.
+- [React Native Vector Icons](https://oblador.github.io/react-native-vector-icons/): Librería de iconos para React
+  Native.
+
+## Instalación
+
+Para instalar el proyecto, debes clonar el repositorio y luego instalar las dependencias con Yarn:
+
+```shell
+git clone git@github.com:brayanhenao/ux-alarma-app-mobile.git
+cd ux-alarma-app-mobile
+yarn install
+```
+
+## Ejecución
+
+### Ejecutar el servidor de Metro
+
+Primero, debes ejecutar el servidor de Metro, el cual es el _bundler_ de JavaScript que viene con React Native. Para
+iniciar Metro ejecuta el siguiente comando desde la raíz del proyecto:
+
+```shell
 yarn start
 ```
 
-## Step 2: Start your Application
+### Ejecutar la aplicación
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Deja corriendo el servidor de Metro en su propia terminal. Abre una nueva terminal desde la raíz del proyecto y ejecuta
+el siguiente comando para iniciar la aplicación en Android o iOS:
 
-### For Android
+#### Para Android
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
+```shell
 yarn android
 ```
 
-### For iOS
+#### Para iOS
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
+```shell
 yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Si todo está configurado _correctamente_, deberías ver la aplicación corriendo en tu _Android Emulator_ o _iOS
+Simulator_ en poco tiempo, siempre y cuando hayas configurado tu emulador/simulador correctamente.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Despliegue
 
-## Step 3: Modifying your App
+## Consideraciones
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
