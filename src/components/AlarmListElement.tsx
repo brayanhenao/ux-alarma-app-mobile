@@ -23,7 +23,7 @@ const AlarmListElement: React.FC<AlarmListElementProps> = ({time, description, i
                 title={time}
                 description={description + (location?` - ${location}`:"")}
                 left={() => <List.Icon icon="map-marker-outline" color={location?theme.colors.tertiary:"transparent"}  />}
-                right={() => 
+                right={() =>
                     <View style={{alignItems:"flex-end"}}>
                         <Switch value={isSwitchOn} onValueChange={onToggleSwitch} />
                         <Text>{repeat?.length==7?'Diario':(repeat?.length==1?repeat[0]:repeat?.map(a=>a.substring(0,2)).join("-"))}</Text>

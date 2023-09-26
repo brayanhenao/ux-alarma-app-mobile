@@ -2,7 +2,10 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Context, {AlarmContextDefaultValue} from './Context';
-import Home from './pages/Home'
+import Home from './pages/Home';
+import CreateAlarm from './pages/CreateAlarm';
+import AddActivity from './pages/AddActivity';
+import RepeatAlarm from './pages/RepeatAlarm';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +20,18 @@ function App(): JSX.Element {
                     headerShown: false
                 }}>
                     <Stack.Screen name="Home" component={Home}/>
+                    <Stack.Screen name="CreateAlarm" component={CreateAlarm} options={{
+                        animation: 'slide_from_bottom',
+                        presentation: 'card',
+                    }}/>
+                    <Stack.Screen name="AddActivity" component={AddActivity} options={{
+                        animation: 'slide_from_right',
+                        presentation: 'card',
+                    }}/>
+                    <Stack.Screen name="RepeatAlarm" component={RepeatAlarm} options={{
+                        animation: 'slide_from_right',
+                        presentation: 'card',
+                    }}/>
                 </Stack.Navigator>
             </NavigationContainer>
         </Context.Provider>

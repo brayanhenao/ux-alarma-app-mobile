@@ -35,6 +35,7 @@ function App({navigation}: any) {
                     <IconButton
                         icon="plus"
                         size={30}
+                        onPress={() => navigation.navigate('CreateAlarm')}
                         style={{
                             marginTop: 10,
                             marginLeft: 10,
