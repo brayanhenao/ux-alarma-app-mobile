@@ -94,7 +94,9 @@ const CreateAlarm = ({ navigation }) => {
           }}>
           Cancelar
         </Button>
-        <Button textColor={theme.colors.onSurface} onPress={saveAlarm}>Guardar</Button>
+        <Button textColor={theme.colors.onSurface} onPress={saveAlarm}>
+          Guardar
+        </Button>
       </View>
       <View
         style={{

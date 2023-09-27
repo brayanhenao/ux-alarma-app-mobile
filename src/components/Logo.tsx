@@ -1,13 +1,7 @@
-import * as React from "react"
-import Svg, { Path, Defs, LinearGradient, Stop } from "react-native-svg"
+import * as React from 'react';
+import Svg, { Path, Defs, LinearGradient, Stop } from 'react-native-svg';
 const Logo = (props) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={183}
-    height={173}
-    fill="none"
-    {...props}
-  >
+  <Svg xmlns="http://www.w3.org/2000/svg" width={183} height={173} fill="none" {...props}>
     <Path
       fill="#7D2B20"
       d="M41.57 153.95h-5.18l-.9 2.93h-4l5.75-15.67h3.55l5.79 15.67h-4.1l-.91-2.93Zm-4.27-2.92h3.36l-1.68-5.43-1.68 5.43ZM51.46 153.97h6.57v2.91H47.68v-15.67h3.78v12.76ZM68.73 153.95h-5.18l-.9 2.93h-4l5.75-15.67h3.55l5.79 15.67h-4.1l-.91-2.93Zm-4.27-2.92h3.36l-1.69-5.43-1.67 5.43ZM80.66 151.34h-2v5.54h-3.78v-15.67h6.16a6.828 6.828 0 0 1 4.36 1.24 4.158 4.158 0 0 1 1.57 3.49 5.11 5.11 0 0 1-.66 2.71 4.703 4.703 0 0 1-2.07 1.74l3.27 6.33v.16h-4l-2.85-5.54Zm-2-2.91h2.38a1.99 1.99 0 0 0 1.584-.571 2 2 0 0 0 .586-1.579 2.21 2.21 0 0 0-.55-1.59 2.153 2.153 0 0 0-1.62-.58h-2.38v4.32ZM94.18 141.21l3.49 10.9 3.49-10.9h5v15.67h-3.79v-3.66l.37-7.49-3.79 11.15h-2.5l-3.79-11.16.36 7.5v3.66h-3.77v-15.67h4.93ZM117.43 153.95h-5.18l-.9 2.93h-4l5.75-15.67h3.55l5.79 15.67h-4.06l-.95-2.93Zm-4.3-2.92h3.37l-1.69-5.43-1.68 5.43ZM127.32 151.56v5.32h-3.78v-15.67h6.25a7.294 7.294 0 0 1 3.18.66 4.999 4.999 0 0 1 2.16 1.88c.513.835.777 1.8.76 2.78a4.529 4.529 0 0 1-1.66 3.62 6.81 6.81 0 0 1-4.5 1.37l-2.41.04Zm0-2.91h2.47a2.391 2.391 0 0 0 1.68-.55 2.067 2.067 0 0 0 .57-1.55c.03-.64-.18-1.268-.59-1.76a2.092 2.092 0 0 0-1.61-.66h-2.52v4.52ZM141.66 151.56v5.32h-3.78v-15.67h6.25a7.352 7.352 0 0 1 3.18.66 4.997 4.997 0 0 1 2.14 1.88 5.22 5.22 0 0 1 .76 2.78 4.55 4.55 0 0 1-1.64 3.66 6.856 6.856 0 0 1-4.51 1.37h-2.4Zm0-2.91h2.47a2.345 2.345 0 0 0 1.67-.55 2.074 2.074 0 0 0 .58-1.55 2.519 2.519 0 0 0-.6-1.76 2.079 2.079 0 0 0-1.61-.66h-2.52l.01 4.52Z"
@@ -24,10 +18,7 @@ const Logo = (props) => (
       fill="url(#b)"
       d="M124.13 56.65c-7.22 2.55-8.22 1.55-14.77 7.42-12.53 11.23-7.77 29.65 6 38.84a108.185 108.185 0 0 0 45.25 16.81l-36.48-63.07Z"
     />
-    <Path
-      fill="url(#c)"
-      d="M118.05 46.22 91.35 0 57.41 58.74c18.1-10.8 39.21-16.03 60.64-12.52Z"
-    />
+    <Path fill="url(#c)" d="M118.05 46.22 91.35 0 57.41 58.74c18.1-10.8 39.21-16.03 60.64-12.52Z" />
     <Path
       fill="url(#d)"
       d="M22.01 120c19.3-35.47 58.72-95.39 117.43-63.5 0 0-30.8-8.92-48.09 6.57C59.98 91.18 96.2 120 96.2 120H22.01Z"
@@ -43,8 +34,7 @@ const Logo = (props) => (
         x2={93.2}
         y1={107.85}
         y2={57.04}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop stopColor="#7D2B20" />
         <Stop offset={1} stopColor="#FFB4A7" />
       </LinearGradient>
@@ -54,8 +44,7 @@ const Logo = (props) => (
         x2={104.08}
         y1={125.51}
         y2={61.73}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop stopColor="#FFB4A7" />
         <Stop offset={1} stopColor="#7D2B20" />
       </LinearGradient>
@@ -65,8 +54,7 @@ const Logo = (props) => (
         x2={98.18}
         y1={66.18}
         y2={5.64}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop stopColor="#7D2B20" />
         <Stop offset={1} stopColor="#FFB4A7" />
       </LinearGradient>
@@ -76,8 +64,7 @@ const Logo = (props) => (
         x2={51.36}
         y1={37.49}
         y2={134.84}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop stopColor="#7D2B20" />
         <Stop offset={1} stopColor="#FFB4A7" />
       </LinearGradient>
@@ -87,12 +74,11 @@ const Logo = (props) => (
         x2={64.17}
         y1={41.47}
         y2={127.98}
-        gradientUnits="userSpaceOnUse"
-      >
+        gradientUnits="userSpaceOnUse">
         <Stop stopColor="#FFB4A7" />
         <Stop offset={1} stopColor="#7D2B20" />
       </LinearGradient>
     </Defs>
   </Svg>
-)
-export default Logo
+);
+export default Logo;

@@ -24,7 +24,11 @@ const AddActivity = ({ navigation }) => {
           justifyContent: 'space-between',
           marginHorizontal: 10,
         }}>
-        <Button textColor={theme.colors.onSurface} onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
+        <Button
+          textColor={theme.colors.onSurface}
+          onPress={() => navigation.navigate('CreateAlarm')}>
+          Cancelar
+        </Button>
       </View>
       <View
         style={{
@@ -36,7 +40,7 @@ const AddActivity = ({ navigation }) => {
           {activityList.map((activity, index) => (
             <>
               <List.Item
-                key={index+'activity'}
+                key={index + 'activity'}
                 title={activity}
                 onPress={() => addActivityToAlarm(activity)}
               />

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { View } from 'react-native';
-import {IconButton, Divider, List, Text, useTheme } from 'react-native-paper';
+import { IconButton, Divider, List, Text, useTheme } from 'react-native-paper';
 
 import { Switch } from 'react-native-switch';
 
@@ -48,18 +48,24 @@ const AlarmListElement: React.FC<AlarmListElementProps> = ({
               barHeight={32}
               circleBorderWidth={0}
               backgroundActive={theme.colors.primary}
-              backgroundInactive={"#EDE0DD"} // Not found in theme
+              backgroundInactive={'#EDE0DD'} // Not found in theme
               circleActiveColor={theme.colors.onPrimary}
               circleInActiveColor={theme.colors.outline}
-              renderInsideCircle={() => <IconButton
-                icon={isSwitchOn ? 'check' : 'close'}
-                iconColor={isSwitchOn ? theme.colors.onPrimaryContainer : theme.colors.onPrimary}
-                size={16}
-              />} // custom component to render inside the Switch circle (Text, Image, etc.)
-              containerStyle={{ borderColor: isSwitchOn?theme.colors.primary:theme.colors.outline, borderWidth: 3, marginRight: -2 }}
+              renderInsideCircle={() => (
+                <IconButton
+                  icon={isSwitchOn ? 'check' : 'close'}
+                  iconColor={isSwitchOn ? theme.colors.onPrimaryContainer : theme.colors.onPrimary}
+                  size={16}
+                />
+              )} // custom component to render inside the Switch circle (Text, Image, etc.)
+              containerStyle={{
+                borderColor: isSwitchOn ? theme.colors.primary : theme.colors.outline,
+                borderWidth: 3,
+                marginRight: -2,
+              }}
               changeValueImmediately={true} // if rendering inside circle, change state immediately or wait for animation to complete
-              innerCircleStyle={{ alignItems: "center", justifyContent: "center" }} // style for inner animated circle for what you (may) be rendering inside the circle
-              outerCircleStyle={{ }} // style for outer animated circle
+              innerCircleStyle={{ alignItems: 'center', justifyContent: 'center' }} // style for inner animated circle for what you (may) be rendering inside the circle
+              outerCircleStyle={{}} // style for outer animated circle
               renderActiveText={false}
               renderInActiveText={false}
               switchLeftPx={3} // denominator for logic when sliding to TRUE position. Higher number = more space from RIGHT of the circle to END of the slider

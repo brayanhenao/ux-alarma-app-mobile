@@ -45,8 +45,14 @@ const RepeatAlarm = ({ navigation }: any) => {
           justifyContent: 'space-between',
           marginHorizontal: 10,
         }}>
-        <Button textColor={theme.colors.onSurface} onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
-        <Button textColor={theme.colors.onSurface} onPress={addRepeatToAlarm}>Guardar</Button>
+        <Button
+          textColor={theme.colors.onSurface}
+          onPress={() => navigation.navigate('CreateAlarm')}>
+          Cancelar
+        </Button>
+        <Button textColor={theme.colors.onSurface} onPress={addRepeatToAlarm}>
+          Guardar
+        </Button>
       </View>
       <View
         style={{

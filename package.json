@@ -9,7 +9,8 @@
     "start": "react-native start",
     "test": "jest",
     "doctor": "react-native doctor",
-    "pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}'"
+    "pretty": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}'",
+    "build-android": "cd android && ./gradlew assembleRelease && cd .."
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.8",

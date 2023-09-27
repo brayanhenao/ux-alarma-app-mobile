@@ -32,7 +32,7 @@ function App({ navigation }: any) {
             justifyContent: 'space-between',
             width: '100%',
           }}>
-          <LogoSimple width={50}/>
+          <LogoSimple width={50} />
           <IconButton
             icon="plus"
             size={30}
