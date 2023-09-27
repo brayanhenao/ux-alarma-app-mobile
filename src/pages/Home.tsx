@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 import AlarmListElement from '../components/AlarmListElement';
-import Logo from '../components/Logo';
+import LogoSimple from '../components/LogoSimple';
 import Context from '../Context';
 
 function App({ navigation }: any) {
@@ -32,7 +32,7 @@ function App({ navigation }: any) {
             justifyContent: 'space-between',
             width: '100%',
           }}>
-          <Logo />
+          <LogoSimple width={50}/>
           <IconButton
             icon="plus"
             size={30}

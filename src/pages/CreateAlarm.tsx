@@ -87,13 +87,14 @@ const CreateAlarm = ({ navigation }) => {
           marginHorizontal: 10,
         }}>
         <Button
+          textColor={theme.colors.onSurface}
           onPress={() => {
             navigation.navigate('Home');
             setAlarmBeingCreated({});
           }}>
           Cancelar
         </Button>
-        <Button onPress={saveAlarm}>Guardar</Button>
+        <Button textColor={theme.colors.onSurface} onPress={saveAlarm}>Guardar</Button>
       </View>
       <View
         style={{
@@ -128,7 +129,7 @@ const CreateAlarm = ({ navigation }) => {
               paddingHorizontal: 20,
             }}>
             <TimePicker initialValue={alarmBeingCreated?.time} onChange={onAlarmTimeChange} />
-            <Button onPress={() => setOpenDatePicker(true)}>
+            <Button onPress={() => setOpenDatePicker(true)} textColor={theme.colors.onSurface}>
               {date.toLocaleDateString('en-GB')}
             </Button>
             <DatePickerModal

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { View } from 'react-native';
 
-import { Button, Checkbox, Divider, List, Text } from 'react-native-paper';
+import { Button, Checkbox, Divider, List, Text, useTheme } from 'react-native-paper';
 import Context from '../Context';
 
 const RepeatAlarm = ({ navigation }: any) => {
@@ -9,6 +9,8 @@ const RepeatAlarm = ({ navigation }: any) => {
   const [daysOfWeekChecked, setDaysOfWeekChecked] = React.useState(daysOfWeek.map(() => false));
 
   const { alarmBeingCreated, setAlarmBeingCreated } = React.useContext(Context);
+
+  const theme = useTheme();
 
   const addRepeatToAlarm = () => {
     const repeat = daysOfWeekChecked
@@ -43,8 +45,8 @@ const RepeatAlarm = ({ navigation }: any) => {
           justifyContent: 'space-between',
           marginHorizontal: 10,
         }}>
-        <Button onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
-        <Button onPress={addRepeatToAlarm}>Guardar</Button>
+        <Button textColor={theme.colors.onSurface} onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
+        <Button textColor={theme.colors.onSurface} onPress={addRepeatToAlarm}>Guardar</Button>
       </View>
       <View
         style={{

@@ -62,7 +62,7 @@ const AddLocation = ({ navigation }) => {
           justifyContent: 'space-between',
           marginHorizontal: 10,
         }}>
-        <Button onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
+        <Button textColor={theme.colors.onSurface} onPress={() => navigation.navigate('CreateAlarm')}>Cancelar</Button>
       </View>
       <View
         style={{

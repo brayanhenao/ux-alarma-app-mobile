@@ -2,6 +2,8 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Context, { AlarmContextDefaultValue } from './Context';
+
+import Loader from './pages/Loader';
 import Home from './pages/Home';
 import CreateAlarm from './pages/CreateAlarm';
 import AddActivity from './pages/AddActivity';
@@ -23,6 +25,7 @@ function App(): JSX.Element {
           screenOptions={{
             headerShown: false,
           }}>
+          <Stack.Screen name="Loader" component={Loader} />
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen
             name="CreateAlarm"

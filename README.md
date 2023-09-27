@@ -55,6 +55,14 @@ cd ux-alarma-app-mobile
 yarn install
 ```
 
+## Configuración
+React Native requiere de cierta configuración para poder ejecutar la aplicación en un emulador o simulador. Para más información, puedes consultar la [documentación oficial](https://reactnative.dev/docs/environment-setup).
+*Solo debe seguir los pasos de Android ya que no se ha configurado iOS, por lo que si bien se puede ejecutar en iOS, no se garantiza que funcione correctamente.*
+
+Adicionalmente el sistema de mapas con el que se cuenta es Google Maps, por lo que se requiere de una API Key para poder utilizarlo. Para más información, puedes consultar la [documentación oficial](https://developers.google.com/maps/documentation/android-sdk/get-api-key?hl=es-419).
+
+Debe exponer la API Key en una variable de entorno llamada `googleMapsApiKey=`. Para más información, puedes consultar la [documentación oficial](https://reactnative.dev/docs/environment-variables).
+
 ## Ejecución
 
 ### Ejecutar el servidor de Metro
@@ -64,6 +72,10 @@ iniciar Metro ejecuta el siguiente comando desde la raíz del proyecto:
 
 ```shell
 yarn start
+```
+o si desea configurar la variable de entorno en el mismo comando:
+```shell
+googleMapsApiKey="YOUR_API_KEY" yarn start
 ```
 
 ### Ejecutar la aplicación
@@ -86,6 +98,7 @@ yarn ios
 Si todo está configurado _correctamente_, deberías ver la aplicación corriendo en tu _Android Emulator_ o _iOS
 Simulator_ en poco tiempo, siempre y cuando hayas configurado tu emulador/simulador correctamente.
 
+*Nota: También puede usar la terminal ejecutando Metro con el comando `yarn start` y luego seleccionar la opción `Run on Android` con la tecla `a` o `Run on iOS` con la tecla `i` .*
 ## Despliegue
 
 ## Consideraciones
